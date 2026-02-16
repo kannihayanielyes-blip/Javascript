@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginga : Le Foot de Rue au Brésil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">GINGA<span>.br</span></a>
+            
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#accordions">O Jogo</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="burger-menu" id="burgerBtn" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>O Futebol<br>Nascido na Rua</h1>
+                <p>Plus qu'un sport, une religion. Découvrez l'essence du football brésilien, là où les légendes commencent : sur le béton et la terre des communautés.</p>
+                <a href="#accordions" class="btn btn-primary">Découvrir le rythme</a>
+            </div>
+        </section>
+
+        <section id="accordions" class="section-padding bg-light">
+            <div class="container section-header">
+                <h2>L'Art du "Ginga"</h2>
+                <p class="subtitle">Le style unique né dans les espaces réduits.</p>
+            </div>
+
+            <div class="container accordion-wrapper">
+                <article class="accordion-item js-accordion">
+                    <div class="accordion-header">
+                        <h3>1. La Créativité sous Pression</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Dans les ruelles étroites, il n'y a pas de place pour les longues courses. Il faut inventer, dribbler dans un mouchoir de poche. C'est cette contrainte qui crée les techniciens les plus incroyables du monde.</p>
+                    </div>
+                </article>
+
+                <article class="accordion-item js-accordion">
+                    <div class="accordion-header">
+                        <h3>2. Le Rythme de la Samba</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Le "Ginga" est ce mouvement de hanche, ce balancement qui ressemble à une danse. Un joueur brésilien ne court pas avec le ballon, il danse avec lui, rendant ses mouvements imprévisibles pour l'adversaire.</p>
+                    </div>
+                </article>
+
+                <article class="accordion-item js-accordion">
+                    <div class="accordion-header">
+                        <h3>3. Une communauté unie</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Sur le terrain vague, il n'y a pas de riches ou de pauvres. Le football est le lien social ultime, une échappatoire et une source de fierté immense pour toute la favela.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="section-padding bg-dark text-light">
+            <div class="container section-header">
+                <h2>Vibrações da Favela</h2>
+                <p class="subtitle">Instants capturés sur le vif.</p>
+            </div>
+
+            <div class="gallery-grid container">
+                <div class="gallery-item js-lightbox-item">
+                    <img src="https://source.unsplash.com/random/600x400/?brazil,football,street" alt="Foot de rue">
+                </div>
+                <div class="gallery-item js-lightbox-item">
+                    <img src="https://source.unsplash.com/random/600x400/?rio,favela" alt="Vue de la favela">
+                </div>
+                <div class="gallery-item js-lightbox-item">
+                    <img src="https://source.unsplash.com/random/600x400/?soccer,kid,brazil" alt="Enfant avec un ballon">
+                </div>
+                 <div class="gallery-item js-lightbox-item">
+                    <img src="https://source.unsplash.com/random/600x400/?graffiti,brazil,art" alt="Street Art">
+                </div>
+                 <div class="gallery-item js-lightbox-item">
+                    <img src="https://source.unsplash.com/random/600x400/?brazil,beach,football" alt="Foot sur la plage">
+                </div>
+                 <div class="gallery-item js-lightbox-item">
+                    <img src="https://source.unsplash.com/random/600x400/?stadium,maracana" alt="Stade mythique">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding bg-accent-pattern">
+            <div class="container form-container bg-white shadow-box">
+                <div class="section-header">
+                    <h2>Entrez sur le terrain</h2>
+                    <p class="subtitle">Contactez notre association locale.</p>
+                </div>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nom d'équipe (Nom) :</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        <span class="error-msg" id="error-name"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email du capitaine :</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                        <span class="error-msg" id="error-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Votre message de soutien :</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Olá..."></textarea>
+                        <span class="error-msg" id="error-message"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark text-light">
+        <div class="container footer-content">
+            <p class="logo">GINGA<span>.br</span></p>
+            <p>© 2023 Projet Bac à Sable JS - Thème Brésil.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
