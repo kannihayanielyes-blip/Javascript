@@ -1,0 +1,23 @@
+console.log("Le fichier script.js est bien lié ! À toi de jouer.");
+
+/* ---------------------------------------------------
+ESPACE POUR TES EXERCICES JS
+---------------------------------------------------
+
+1. MENU BURGER MOBILE :
+   - Cible le bouton burger (.burger-menu) et la nav (.main-nav).
+   - Au clic, ajoute/enlève la classe CSS 'active' sur la nav.
+
+2. ACCORDÉONS :
+   - Cible tous les (.js-accordion).
+   - Ajoute un écouteur d'événement sur les headers.
+   - Au clic, change le display du (.accordion-content) correspondant.
+
+3. FORMULAIRE :
+   - Écoute le 'submit' du formulaire.
+   - Empêche l'envoi par défaut (e.preventDefault()).
+   - Vérifie si les champs sont vides.
+   - Affiche des messages dans les (.error-msg).
+
+---------------------------------------------------
+*/
